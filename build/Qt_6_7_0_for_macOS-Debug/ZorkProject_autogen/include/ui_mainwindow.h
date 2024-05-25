@@ -53,7 +53,7 @@ public:
         southButton->setGeometry(QRect(330, 160, 100, 32));
         plainTextEdit = new QPlainTextEdit(centralwidget);
         plainTextEdit->setObjectName("plainTextEdit");
-        plainTextEdit->setGeometry(QRect(210, 260, 391, 131));
+        plainTextEdit->setGeometry(QRect(60, 260, 631, 211));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");

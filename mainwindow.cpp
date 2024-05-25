@@ -39,7 +39,7 @@ void MainWindow::on_southButton_clicked()
         player.moveTo(southRoom);
         appendOutput(player.lookAround());
     } else {
-        appendOutput("You can't go south from here.");
+        appendOutput("You can't go south from here.\n\n");
     }
 }
 
@@ -52,7 +52,7 @@ void MainWindow::on_eastButton_clicked()
         player.moveTo(eastRoom);
         appendOutput(player.lookAround());
     } else {
-        appendOutput("You can't go east from here.");
+        appendOutput("You can't go east from here.\n\n");
     }
 }
 // Slot for west button click
@@ -64,7 +64,7 @@ void MainWindow::on_westButton_clicked()
         player.moveTo(westRoom);
         appendOutput(player.lookAround());
     } else {
-        appendOutput("You can't go west from here.");
+        appendOutput("You can't go west from here.\n\n");
     }
 }
 
@@ -82,25 +82,37 @@ void MainWindow::on_northButton_clicked()
         // Print the new room description
         appendOutput(player.lookAround());
     } else {
-        appendOutput("You can't go north from here.");
+        appendOutput("You can't go north from here.\n\n");
     }
 }
 
 // Function to create and link rooms
 void MainWindow::createRooms()
 {
-    startingRoom = new room("You are in the starting roomdfsf.");  // Initialize the starting room
-    a = new room("You are in room a");
-    b = new room("You are in room b");    // Initialize the northern room
-    c = new room("You are in room c");
-    d = new room("You are in room d");
-    e = new room("You are in room e");
+    startingRoom = new room("Spawn \nYou are in a small dark room. There is barely any light and the room appears to be empty\n\n");  // Initialize the starting room
+
+    a = new room("Great hall\nYou walk through the door and are amazed by what you see. It is a Great Hall you can't believe your eyes. You look around there is long rows of tables all leading to a Throne. You think to yourself... This must be where the king sat....\n\n");
+    b = new room("Balcony\nYou enter a balcony. The view is great from here\n\n");
+    c = new room("Bedroom\n You enter what appears to be the kings bedroom you see a shiny sword in the corner\n\n");
+    d = new room("Hallway\n You have walked through the wooden door and are now in a long hallway.\n\n");
+    e = new room("Deadend\nYou walk through the door there is nothing there.\n\n");
+    f = new room("Armory\n You enter an armory. There is alot of weapons and armor lying around....\n\n");
+    g = new room("Libary\n You enter the libary. Maybe there will be import information in one of these books...\n\n");
+    h = new room("Courtyard\n You enter the courtyard. You see what appears to be a hidden door to your north\n\n");
+    i = new room("Outside\n You walk through the door and appear to be outside. You turn around and look at the building you just came from it seems to be an old castle. You think to yourself.... Maybe theres some old treasure in here... You think about running away but your curious to see whats inside...\n\n");
+    j = new room("Tresure Room\nYou see a tresure box ahead of you. You need a key to open it\n\n");
 
 
     // Set exits for the rooms n e s w
-    startingRoom->setExits(a, nullptr,nullptr,nullptr);
-    a->setExits(nullptr, b, startingRoom, c);
+    startingRoom->setExits(d, nullptr,nullptr,nullptr);
+    a->setExits(f, b, d, c);
     b->setExits(nullptr, nullptr, nullptr, a);
     c->setExits(nullptr, a, nullptr, nullptr);
-
+    d->setExits(a, e, startingRoom, i);
+    e->setExits(nullptr, nullptr, nullptr, d);
+    f->setExits(nullptr, g, a, h);
+    g->setExits(nullptr, nullptr, nullptr, f);
+    h->setExits(j, f, nullptr, nullptr);
+    i->setExits(nullptr, d, nullptr, nullptr);
+    j->setExits(nullptr, nullptr, h, nullptr);
 }
