@@ -14,6 +14,7 @@ public:
 
     // Returns the description of the current room, or a default message if the player is not in a room
     QString lookAround() const;
+    room* getCurrentRoom() const;
 
 private:
     room *currentRoom;  // The current room the player is in

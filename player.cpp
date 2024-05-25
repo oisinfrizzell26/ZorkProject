@@ -13,3 +13,7 @@ void Player::moveTo(room *newRoom) {
 QString Player::lookAround() const {
     return currentRoom ? currentRoom->getDescription() : "You are nowhere.";
 }
+
+room* Player::getCurrentRoom() const {
+    return currentRoom;
+}

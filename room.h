@@ -15,6 +15,7 @@ public:
 
     // Sets an exit in a specified direction to a neighboring room
     void setExit(const QString &direction, room *neighbor);
+    void setExits(room *north, room *east, room *south, room *west);
 
     // Returns the neighboring room in a specified direction, or nullptr if none
     room* getExit(const QString &direction) const;
