@@ -1,18 +1,17 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QTimer>
-#include <QString>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    QApplication a(argc, argv);  // Create the application object
+    MainWindow w;  // Create the main window object
+    w.show();  // Show the main window
 
-    // Create a QTimer to delay the output
+    // Example: Create a QTimer to delay the output
     QTimer::singleShot(5000, [&w]() {
-        w.appendOutput("Testing");
+        w.appendOutput("Testing");  // Append the message "Testing" to the QPlainTextEdit after 5 seconds
     });
 
-    return a.exec();
+    return a.exec();  // Start the application event loop
 }

@@ -93,11 +93,15 @@
  mdp:/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/wait.h
  mdp:/Users/oisinfrizzell/Desktop/C++/ZorkProject/build/Qt_6_7_0_for_macOS-Debug/ZorkProject_autogen/moc_predefs.h
  mdp:/Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.h
+ mdp:/Users/oisinfrizzell/Desktop/C++/ZorkProject/player.h
+ mdp:/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QList
+ mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QMap
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QRect
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QSize
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF
+ mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QString
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h
@@ -288,7 +292,12 @@
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/rooom.h
+/Users/oisinfrizzell/Desktop/C++/ZorkProject/player.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/main.cpp
+/Users/oisinfrizzell/Desktop/C++/ZorkProject/player.cpp
+/Users/oisinfrizzell/Desktop/C++/ZorkProject/main.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.cpp
  uic:./ui_mainwindow.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/rooom.cpp
+/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h
+/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.cpp

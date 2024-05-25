@@ -291,6 +291,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/main.h",
+			"MU",
+			"EWIEGA46WW/moc_main.cpp",
+			null
+		],
+		[
 			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -303,9 +309,9 @@
 			null
 		],
 		[
-			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/rooom.h",
+			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h",
 			"MU",
-			"EWIEGA46WW/moc_rooom.cpp",
+			"EWIEGA46WW/moc_room.cpp",
 			null
 		]
 	],
@@ -373,7 +379,7 @@
 			null
 		],
 		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/player.cpp", "MU", null ],
-		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/rooom.cpp", "MU", null ]
+		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

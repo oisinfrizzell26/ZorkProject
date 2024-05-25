@@ -90,11 +90,15 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/wait.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/player.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QList \
+  /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QMap \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
+  /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QString \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \

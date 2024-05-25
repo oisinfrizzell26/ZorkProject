@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-1da993bbc07246c1981d.json",
+					"jsonFile" : "directory-.-Debug-ea2381bed78f43d744d8.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ZorkProject::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZorkProject-Debug-24c22a9e48273ed966a5.json",
+					"jsonFile" : "target-ZorkProject-Debug-1d88a34b520e161cc17b.json",
 					"name" : "ZorkProject",
 					"projectIndex" : 0
 				},
