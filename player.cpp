@@ -6,6 +6,7 @@ Player::Player() : currentRoom(nullptr) {}
 // Moves the player to a new room
 void Player::moveTo(room *newRoom) {
     currentRoom = newRoom;
+
 }
 
 // Returns the description of the current room, or a default message if the player is not in a room

@@ -33,7 +33,7 @@ void MainWindow::appendOutput(const QString &message)
 // Slot for south button click
 void MainWindow::on_southButton_clicked()
 {
-    appendOutput("South button clicked");  // Append message when the south button is clicked
+     player.moveTo(startingRoom);  // Append message when the south button is clicked
 }
 
 // Slot for east button click
@@ -59,10 +59,10 @@ void MainWindow::on_northButton_clicked()
 // Function to create and link rooms
 void MainWindow::createRooms()
 {
-    startingRoom = new room("You are in the starting room.");  // Initialize the starting room
-    northRoom = new room("You are in the northern room.");  // Initialize the northern room
+    startingRoom = new room("You are in the starting roomdfsf.");  // Initialize the starting room
+    northRoom = new room("You are in the northern room dfd.");  // Initialize the northern room
 
     // Set exits for the rooms
-    startingRoom->setExit("north", northRoom);
+    startingRoom->setExit("You are in the first room", northRoom);
     northRoom->setExit("south", startingRoom);
 }
