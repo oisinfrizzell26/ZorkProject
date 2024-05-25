@@ -1,0 +1,10 @@
+# ninja log v5
+4	137	1716642565073492000	ZorkProject_autogen/mocs_compilation.cpp	9cafbdf05a4b8170
+4	137	1716642565073492000	/Users/oisinfrizzell/Desktop/C++/ZorkProject/build/Qt_6_7_0_for_macOS-Debug/ZorkProject_autogen/timestamp	9cafbdf05a4b8170
+4	137	1716642565073492000	ZorkProject_autogen/timestamp	9cafbdf05a4b8170
+4	137	1716642565073492000	/Users/oisinfrizzell/Desktop/C++/ZorkProject/build/Qt_6_7_0_for_macOS-Debug/ZorkProject_autogen/mocs_compilation.cpp	9cafbdf05a4b8170
+137	763	1716642565701228412	CMakeFiles/ZorkProject.dir/mainwindow.cpp.o	fa97f333e1f11234
+137	750	1716642565688633188	CMakeFiles/ZorkProject.dir/main.cpp.o	23d3bf2c4622ddb1
+763	849	1716642565790237603	ZorkProject.app/Contents/MacOS/ZorkProject	d0ee7472d5b3ae40
+24	46	1716642097820737581	CMakeFiles/ZorkProject.dir/rooom.cpp.o	f9358379eeb2b132
+137	735	1716642565673747712	CMakeFiles/ZorkProject.dir/ZorkProject_autogen/mocs_compilation.cpp.o	6d08f946d30243c3
