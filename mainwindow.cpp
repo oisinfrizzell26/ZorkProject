@@ -1,8 +1,3 @@
-
-
-
-
-
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
@@ -56,13 +51,9 @@ void MainWindow::on_westButton_clicked()
 // Slot for north button click
 void MainWindow::on_northButton_clicked()
 {
-    room *nextRoom = player.lookAround().getExit("north");
-    if (nextRoom) {
-        player.moveTo(nextRoom);
-        appendOutput(player.lookAround());  // Print the new room description
-    } else {
-        appendOutput("There is no exit in that direction!");  // Print a message if there is no north exit
-    }
+    player.moveTo(northRoom);
+    // Print the new room description
+    appendOutput(player.lookAround());
 }
 
 // Function to create and link rooms
@@ -74,5 +65,4 @@ void MainWindow::createRooms()
     // Set exits for the rooms
     startingRoom->setExit("north", northRoom);
     northRoom->setExit("south", startingRoom);
-
 }

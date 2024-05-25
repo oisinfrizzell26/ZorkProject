@@ -1,7 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "room.h"
+#include "Room.h"
 
 class Player
 {

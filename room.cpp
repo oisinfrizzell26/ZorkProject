@@ -1,4 +1,4 @@
-#include "room.h"
+#include "Room.h"
 
 // Constructor: Initializes the room with a description
 room::room(const QString &description) : description(description) {}

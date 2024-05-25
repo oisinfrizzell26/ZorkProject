@@ -5,7 +5,7 @@
 #include <QPlainTextEdit>
 #include <QTimer>
 #include "player.h"
-#include "room.h"
+#include "Room.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -42,3 +42,4 @@ private:
 };
 
 #endif // MAINWINDOW_H
+
