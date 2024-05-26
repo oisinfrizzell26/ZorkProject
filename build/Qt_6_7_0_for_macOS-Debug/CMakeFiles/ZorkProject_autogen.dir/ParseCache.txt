@@ -2,10 +2,10 @@
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/room.cpp
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.cpp
  uic:./ui_mainwindow.h
-/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/main.h
-/Users/oisinfrizzell/Desktop/C++/ZorkProject/player.cpp
+/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/rooom.cpp
+/Users/oisinfrizzell/Desktop/C++/ZorkProject/player.cpp
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/rooom.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.h
 /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.cpp

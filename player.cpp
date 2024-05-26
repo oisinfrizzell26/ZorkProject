@@ -39,7 +39,11 @@ room* Player::getCurrentRoom() const {
 
 void Player::pickUpItem(){
     if(currentRoom && !currentRoom->items.empty()){
-        inventory.push_back(currentRoom->items.back());
+        item currentItem= currentRoom->items.back();
+        if (currentItem.getDescription() == "Treasure Chest" && !hasItem("Key")) {
+            return;
+        }
+        inventory.push_back(currentItem);
         currentRoom->items.pop_back();
 
     }
@@ -57,4 +61,13 @@ QString Player::listInventory() const {
     }
     return inventoryList;
 
+}
+
+bool Player::hasItem(const std::string &itemName) const {
+    for (const item &it : inventory) {
+        if (it.getDescription() == itemName) {
+            return true;
+        }
+    }
+    return false;
 }

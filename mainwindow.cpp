@@ -88,10 +88,16 @@ void MainWindow::on_northButton_clicked()
 
 void MainWindow::on_pickButton_clicked()
 {
-    player.pickUpItem();
-    appendOutput("You picked up the item.\n");
-    appendOutput(player.lookAround());
-
+    if (player.getCurrentRoom()) {
+        item currentItem = player.getCurrentRoom()->items.back();
+        if (currentItem.getDescription() == "Treasure Chest" && !player.hasItem("Key")) {
+            appendOutput("You need a key to pick up the Treasure Chest.\n");
+            return;
+        }
+        player.pickUpItem();
+        appendOutput("Picked up the item.\n");
+        appendOutput(player.lookAround());
+    }
 }
 
 
@@ -131,7 +137,7 @@ void MainWindow::createRooms()
     g = new room("Libary\n You enter the libary. Maybe there will be import information in one of these books...\n");
     h = new room("Courtyard\n You enter the courtyard. You see what appears to be a hidden door to your north\n");
     i = new room("Outside\n You walk through the door and appear to be outside. You turn around and look at the building you just came from it seems to be an old castle. You think to yourself.... Maybe theres some old treasure in here... You think about running away but your curious to see whats inside...\n");
-    j = new room("Tresure Room\nYou see a tresure box ahead of you. You need a key to open it\n");
+    j = new room("Treasure Room\nYou see a tresure box ahead of you. You need a key to open it\n");
 
 
     // Set exits for the rooms n e s w
@@ -153,9 +159,10 @@ void MainWindow::createRooms()
 
     startingRoom->addItem(item("Lantern", 500));
     a->addItem(item("Sword", 1500));
-    c->addItem(item("Key", 2000));
+    b->addItem(item("Key", 2000));
     f->addItem(item("Armor", 3000));
     g->addItem(item("Book", 500));
+    j->addItem(item("Treasure Chest", 3000));
 }
 
 

@@ -23,6 +23,8 @@ public:
     // method for picking up an item
 
     QString listInventory() const;
+    bool hasItem(const std::string &itemName) const; // checks if you have item for picking up item
+
 
 private:
     room *currentRoom;  // The current room the player is in
