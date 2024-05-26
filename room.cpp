@@ -49,6 +49,6 @@ QString room::listItems()const{
     QString itemList;
     for(const item &it : items){
         itemList += QString::fromStdString(it.getDescription()) + "\n";
-    }
+    }//&it refers to each it in items class one by one
     return itemList;
 }

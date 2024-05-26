@@ -34,6 +34,10 @@ private slots:
 
     void on_mapButton_clicked();
 
+    void on_pickButton_clicked();
+
+    void on_inventoryButton_clicked();
+
 private:
     Ui::MainWindow *ui;  // Pointer to the UI elements defined in the .ui file
     Player player;  // The player object

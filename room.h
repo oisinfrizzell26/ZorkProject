@@ -25,11 +25,12 @@ public:
     void addItem(const item &item);
 
     QString listItems() const;
+    std::vector<item> items;
 
 private:
     QString description;  // Description of the room
     QMap<QString, room*> exits;  // Maps directions to neighboring rooms
-    std::vector<item> items;
+
 };
 
 #endif // ROOM_H

@@ -12,6 +12,9 @@ public:
     std::string getDescription() const { return description; }
     int getWeight() const { return weightGrams; }
 
+
+
+
 private:
     std::string description;
     int weightGrams;

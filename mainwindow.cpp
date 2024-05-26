@@ -86,6 +86,37 @@ void MainWindow::on_northButton_clicked()
     }
 }
 
+void MainWindow::on_pickButton_clicked()
+{
+    player.pickUpItem();
+    appendOutput("You picked up the item.\n");
+    appendOutput(player.lookAround());
+
+}
+
+
+void MainWindow::on_inventoryButton_clicked()
+{
+    appendOutput("Your inventory:\n"+ player.listInventory());
+
+}
+
+
+
+
+void MainWindow::on_mapButton_clicked()
+{
+    appendOutput(QString::fromStdString(createMap()));
+}
+
+
+
+
+
+
+
+
+
 // Function to create and link rooms
 void MainWindow::createRooms()
 {
@@ -122,7 +153,7 @@ void MainWindow::createRooms()
 
     startingRoom->addItem(item("Lantern", 500));
     a->addItem(item("Sword", 1500));
-    c->addItem(item("Shield", 2000));
+    c->addItem(item("Key", 2000));
     f->addItem(item("Armor", 3000));
     g->addItem(item("Book", 500));
 }
@@ -158,8 +189,6 @@ std::string MainWindow::createMap(){
 
 
 }
-void MainWindow::on_mapButton_clicked()
-{
-    appendOutput(QString::fromStdString(createMap()));
-}
+
+
 

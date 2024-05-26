@@ -1,5 +1,6 @@
 #include "player.h"
 
+
 // Constructor: Initializes the player with no current room
 Player::Player() : currentRoom(nullptr) {}
 
@@ -34,4 +35,26 @@ QString Player::lookAround() const {
 
 room* Player::getCurrentRoom() const {
     return currentRoom;
+}
+
+void Player::pickUpItem(){
+    if(currentRoom && !currentRoom->items.empty()){
+        inventory.push_back(currentRoom->items.back());
+        currentRoom->items.pop_back();
+
+    }
+
+}
+
+QString Player::listInventory() const {
+    QString inventoryList;
+    if(inventory.empty()){
+        inventoryList = "Your inventory is empty";
+    }else{
+        for(const item &it : inventory){
+            inventoryList += QString::fromStdString(it.getDescription()) + "\n";
+        }
+    }
+    return inventoryList;
+
 }
