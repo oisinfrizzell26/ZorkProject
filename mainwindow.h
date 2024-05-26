@@ -23,6 +23,7 @@ public:
 
     // Method to append text to the QPlainTextEdit
     void appendOutput(const QString &message);
+    std::string createMap();
 
 private slots:
     // Slots for handling button click events
@@ -30,6 +31,8 @@ private slots:
     void on_eastButton_clicked();
     void on_westButton_clicked();
     void on_northButton_clicked();
+
+    void on_mapButton_clicked();
 
 private:
     Ui::MainWindow *ui;  // Pointer to the UI elements defined in the .ui file

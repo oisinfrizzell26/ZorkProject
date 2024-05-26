@@ -11,7 +11,25 @@ void Player::moveTo(room *newRoom) {
 
 // Returns the description of the current room, or a default message if the player is not in a room
 QString Player::lookAround() const {
-    return currentRoom ? currentRoom->getDescription() : "You are nowhere.";
+ if (currentRoom) {
+        QString description = currentRoom->getDescription();
+        QString itemsList = currentRoom->listItems();
+        if (!itemsList.isEmpty()) {
+            description += "\nItems in the room: " + itemsList;
+        } else {
+            description += "\nThere are no items in the room.";
+        }
+        return description;
+    } else {
+        return "You are nowhere.";
+    }
+
+
+
+
+
+
+
 }
 
 room* Player::getCurrentRoom() const {

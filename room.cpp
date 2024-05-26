@@ -33,8 +33,22 @@ void room::setExits(room *north, room *east, room *south, room *west) {
         setExit("west", west);
         west->setExit("east", this); // Automatically set reciprocal exit
     }
+
+
 }
 
 room* room::getExit(const QString &direction) const {
     return exits.value(direction, nullptr);
+}
+
+void room::addItem(const item &item){
+    items.push_back(item);
+}
+
+QString room::listItems()const{
+    QString itemList;
+    for(const item &it : items){
+        itemList += QString::fromStdString(it.getDescription()) + "\n";
+    }
+    return itemList;
 }

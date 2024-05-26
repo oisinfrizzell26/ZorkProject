@@ -89,18 +89,18 @@ void MainWindow::on_northButton_clicked()
 // Function to create and link rooms
 void MainWindow::createRooms()
 {
-    startingRoom = new room("Spawn \nYou are in a small dark room. There is barely any light and the room appears to be empty\n\n");  // Initialize the starting room
+    startingRoom = new room("Spawn \nYou are in a small dark room. There is barely any light and the room appears to be empty\n");  // Initialize the starting room
 
-    a = new room("Great hall\nYou walk through the door and are amazed by what you see. It is a Great Hall you can't believe your eyes. You look around there is long rows of tables all leading to a Throne. You think to yourself... This must be where the king sat....\n\n");
-    b = new room("Balcony\nYou enter a balcony. The view is great from here\n\n");
-    c = new room("Bedroom\n You enter what appears to be the kings bedroom you see a shiny sword in the corner\n\n");
-    d = new room("Hallway\n You have walked through the wooden door and are now in a long hallway.\n\n");
-    e = new room("Deadend\nYou walk through the door there is nothing there.\n\n");
-    f = new room("Armory\n You enter an armory. There is alot of weapons and armor lying around....\n\n");
-    g = new room("Libary\n You enter the libary. Maybe there will be import information in one of these books...\n\n");
-    h = new room("Courtyard\n You enter the courtyard. You see what appears to be a hidden door to your north\n\n");
-    i = new room("Outside\n You walk through the door and appear to be outside. You turn around and look at the building you just came from it seems to be an old castle. You think to yourself.... Maybe theres some old treasure in here... You think about running away but your curious to see whats inside...\n\n");
-    j = new room("Tresure Room\nYou see a tresure box ahead of you. You need a key to open it\n\n");
+    a = new room("Great hall\nYou walk through the door and are amazed by what you see. It is a Great Hall you can't believe your eyes. You look around there is long rows of tables all leading to a Throne. You think to yourself... This must be where the king sat....\n");
+    b = new room("Balcony\nYou enter a balcony. The view is great from here\n");
+    c = new room("Bedroom\n You enter what appears to be the kings bedroom you see a shiny sword in the corner\n");
+    d = new room("Hallway\n You have walked through the wooden door and are now in a long hallway.\n");
+    e = new room("Deadend\nYou walk through the door there is nothing there.\n");
+    f = new room("Armory\n You enter an armory. There is alot of weapons and armor lying around....\n");
+    g = new room("Libary\n You enter the libary. Maybe there will be import information in one of these books...\n");
+    h = new room("Courtyard\n You enter the courtyard. You see what appears to be a hidden door to your north\n");
+    i = new room("Outside\n You walk through the door and appear to be outside. You turn around and look at the building you just came from it seems to be an old castle. You think to yourself.... Maybe theres some old treasure in here... You think about running away but your curious to see whats inside...\n");
+    j = new room("Tresure Room\nYou see a tresure box ahead of you. You need a key to open it\n");
 
 
     // Set exits for the rooms n e s w
@@ -115,4 +115,51 @@ void MainWindow::createRooms()
     h->setExits(j, f, nullptr, nullptr);
     i->setExits(nullptr, d, nullptr, nullptr);
     j->setExits(nullptr, nullptr, h, nullptr);
+
+
+
+
+
+    startingRoom->addItem(item("Lantern", 500));
+    a->addItem(item("Sword", 1500));
+    c->addItem(item("Shield", 2000));
+    f->addItem(item("Armor", 3000));
+    g->addItem(item("Book", 500));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+std::string MainWindow::createMap(){
+
+    return  "  [Treasure room]        \n"
+           "            |         \n"
+           "            |         \n"
+           "   [Courtyard] --- [Armory] --- [Library]\n"
+           "                                     |         \n"
+           "                                     |         \n"
+           "    [Bedroom] --- [Great hall] --- [Balcony]\n"
+           "                                     |         \n"
+           "                                     |         \n"
+           "     [Outside] --- [Hallway] --- [Deadend]\n"
+           "                                     |         \n"
+           "                                     |         \n"
+           "                              [Spawn]        \n";
+
+
+
+}
+void MainWindow::on_mapButton_clicked()
+{
+    appendOutput(QString::fromStdString(createMap()));
+}
+

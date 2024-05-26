@@ -29,6 +29,7 @@ public:
     QPushButton *westButton;
     QPushButton *southButton;
     QPlainTextEdit *plainTextEdit;
+    QPushButton *mapButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -53,7 +54,10 @@ public:
         southButton->setGeometry(QRect(330, 160, 100, 32));
         plainTextEdit = new QPlainTextEdit(centralwidget);
         plainTextEdit->setObjectName("plainTextEdit");
-        plainTextEdit->setGeometry(QRect(60, 260, 631, 211));
+        plainTextEdit->setGeometry(QRect(60, 240, 631, 291));
+        mapButton = new QPushButton(centralwidget);
+        mapButton->setObjectName("mapButton");
+        mapButton->setGeometry(QRect(70, 170, 100, 32));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -75,6 +79,7 @@ public:
         eastButton->setText(QCoreApplication::translate("MainWindow", "Go East", nullptr));
         westButton->setText(QCoreApplication::translate("MainWindow", "Go West", nullptr));
         southButton->setText(QCoreApplication::translate("MainWindow", "Go South", nullptr));
+        mapButton->setText(QCoreApplication::translate("MainWindow", "Map", nullptr));
     } // retranslateUi
 
 };

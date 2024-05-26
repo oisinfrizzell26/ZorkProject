@@ -3,6 +3,8 @@
 
 #include <QString>
 #include <QMap>
+#include <vector>
+#include "item.h"
 
 class room
 {
@@ -20,9 +22,14 @@ public:
     // Returns the neighboring room in a specified direction, or nullptr if none
     room* getExit(const QString &direction) const;
 
+    void addItem(const item &item);
+
+    QString listItems() const;
+
 private:
     QString description;  // Description of the room
     QMap<QString, room*> exits;  // Maps directions to neighboring rooms
+    std::vector<item> items;
 };
 
 #endif // ROOM_H
