@@ -89,14 +89,14 @@ void MainWindow::on_northButton_clicked()
 void MainWindow::on_pickButton_clicked()
 {
     if (player.getCurrentRoom()) {
-        item currentItem = player.getCurrentRoom()->items.back();
-        if (currentItem.getDescription() == "Treasure Chest" && !player.hasItem("Key")) {
-            appendOutput("You need a key to pick up the Treasure Chest.\n");
-            return;
-        }
-        player.pickUpItem();
-        appendOutput("Picked up the item.\n");
+        QString result = player.pickUpItem();
+        appendOutput(result + "\n");
         appendOutput(player.lookAround());
+
+        if (result == "Game Over") {
+            // Additional logic for game over scenario, if needed
+            appendOutput("Game Over\n");
+        }
     }
 }
 

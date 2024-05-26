@@ -37,19 +37,24 @@ room* Player::getCurrentRoom() const {
     return currentRoom;
 }
 
-void Player::pickUpItem(){
-    if(currentRoom && !currentRoom->items.empty()){
-        item currentItem= currentRoom->items.back();
+QString Player::pickUpItem() {
+    if (currentRoom && !currentRoom->items.empty()) {
+        item currentItem = currentRoom->items.back();
         if (currentItem.getDescription() == "Treasure Chest" && !hasItem("Key")) {
-            return;
+            return "You need a key to open the chest";
         }
         inventory.push_back(currentItem);
         currentRoom->items.pop_back();
 
+        // Check if the item is "Treasure Chest" and return "Game Over"
+        if (currentItem.getDescription() == "Treasure Chest") {
+            return "Game Over";
+        }
+
+        return "Item picked up successfully";
     }
-
+    return "No items to pick up";
 }
-
 QString Player::listInventory() const {
     QString inventoryList;
     if(inventory.empty()){

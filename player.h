@@ -19,7 +19,7 @@ public:
 
     room* getCurrentRoom() const;
 
-    void pickUpItem();
+    QString pickUpItem();
     // method for picking up an item
 
     QString listInventory() const;
