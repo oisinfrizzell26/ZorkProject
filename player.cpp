@@ -76,3 +76,7 @@ bool Player::hasItem(const std::string &itemName) const {
     }
     return false;
 }
+
+bool Player::hasDoorkey() const{
+    return hasItem("doorKey");
+}

@@ -24,6 +24,7 @@ public:
 
     QString listInventory() const;
     bool hasItem(const std::string &itemName) const; // checks if you have item for picking up item
+    bool hasDoorkey() const;
 
 
 private:

@@ -36,8 +36,12 @@ void MainWindow::on_southButton_clicked()
     room* currentRoom = player.getCurrentRoom();
     room* southRoom = currentRoom->getExit("south");
     if (southRoom != nullptr) {
-        player.moveTo(southRoom);
-        appendOutput(player.lookAround());
+        if (southRoom->getDescription().contains("Balcony") && !player.hasDoorkey()) {
+            appendOutput("You need the doorkey to enter the balcony.\n\n");
+        } else {
+            player.moveTo(southRoom);
+            appendOutput(player.lookAround());
+        }
     } else {
         appendOutput("You can't go south from here.\n\n");
     }
@@ -49,8 +53,12 @@ void MainWindow::on_eastButton_clicked()
     room* currentRoom = player.getCurrentRoom();
     room* eastRoom = currentRoom->getExit("east");
     if (eastRoom != nullptr) {
-        player.moveTo(eastRoom);
-        appendOutput(player.lookAround());
+        if (eastRoom->getDescription().contains("Balcony") && !player.hasDoorkey()) {
+            appendOutput("You need the doorkey to enter the balcony.\n\n");
+        } else {
+            player.moveTo(eastRoom);
+            appendOutput(player.lookAround());
+        }
     } else {
         appendOutput("You can't go east from here.\n\n");
     }
@@ -61,30 +69,33 @@ void MainWindow::on_westButton_clicked()
     room* currentRoom = player.getCurrentRoom();
     room* westRoom = currentRoom->getExit("west");
     if (westRoom != nullptr) {
-        player.moveTo(westRoom);
-        appendOutput(player.lookAround());
+        if (westRoom->getDescription().contains("Balcony") && !player.hasDoorkey()) {
+            appendOutput("You need the doorkey to enter the balcony.\n\n");
+        } else {
+            player.moveTo(westRoom);
+            appendOutput(player.lookAround());
+        }
     } else {
         appendOutput("You can't go west from here.\n\n");
     }
 }
-
 // Slot for north button click
 void MainWindow::on_northButton_clicked()
 {
     room* currentRoom = player.getCurrentRoom();
-
-    // Get the room to the north
     room* northRoom = currentRoom->getExit("north");
-
-    // Move the player to the north room if it exists
     if (northRoom != nullptr) {
-        player.moveTo(northRoom);
-        // Print the new room description
-        appendOutput(player.lookAround());
+        if (northRoom->getDescription().contains("Balcony") && !player.hasDoorkey()) {
+            appendOutput("You need the doorkey to enter the balcony.\n\n");
+        } else {
+            player.moveTo(northRoom);
+            appendOutput(player.lookAround());
+        }
     } else {
         appendOutput("You can't go north from here.\n\n");
     }
 }
+
 
 void MainWindow::on_pickButton_clicked()
 {
@@ -157,12 +168,11 @@ void MainWindow::createRooms()
 
 
 
-    startingRoom->addItem(item("Lantern", 500));
-    a->addItem(item("Sword", 1500));
+
+
     b->addItem(item("Key", 2000));
-    f->addItem(item("Armor", 3000));
-    g->addItem(item("Book", 500));
-    j->addItem(item("Treasure Chest", 3000));
+
+    i->addItem(item("doorKey",1000));
 }
 
 
