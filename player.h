@@ -1,8 +1,9 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-
+#include"abstractitem.h"
 #include "room.h"
+
 
 class Player
 {
@@ -25,6 +26,7 @@ public:
     QString listInventory() const;
     bool hasItem(const std::string &itemName) const; // checks if you have item for picking up item
     bool hasDoorkey() const;
+    void useItem(const std::string &itemName) const;
 
 
 private:

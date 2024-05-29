@@ -123,7 +123,7 @@ void MainWindow::on_inventoryButton_clicked()
 
 void MainWindow::on_mapButton_clicked()
 {
-    appendOutput(QString::fromStdString(createMap()));
+     appendOutput(mapGenerator.generateMap());
 }
 
 
@@ -171,6 +171,7 @@ void MainWindow::createRooms()
 
 
     b->addItem(item("Key", 2000));
+    j ->addItem(item("Treasure Chest", 2000));
 
     i->addItem(item("doorKey",1000));
 }
@@ -186,26 +187,6 @@ void MainWindow::createRooms()
 
 
 
-
-std::string MainWindow::createMap(){
-
-    return  "  [Treasure room]        \n"
-           "            |         \n"
-           "            |         \n"
-           "   [Courtyard] --- [Armory] --- [Library]\n"
-           "                                     |         \n"
-           "                                     |         \n"
-           "    [Bedroom] --- [Great hall] --- [Balcony]\n"
-           "                                     |         \n"
-           "                                     |         \n"
-           "     [Outside] --- [Hallway] --- [Deadend]\n"
-           "                                     |         \n"
-           "                                     |         \n"
-           "                              [Spawn]        \n";
-
-
-
-}
 
 
 

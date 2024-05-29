@@ -6,6 +6,7 @@
 #include <QTimer>
 #include "player.h"
 #include "Room.h"
+#include "StandardMapGenerator.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -43,7 +44,7 @@ private:
     Player player;  // The player object
     room *startingRoom;  // Pointer to the starting room
     room *a,*b,*c,*d,*e,*f,*g,*h,*i,*j;  // Pointer to the northern room
-
+    StandardMapGenerator mapGenerator;
     // Function to create and link rooms
     void createRooms();
 };

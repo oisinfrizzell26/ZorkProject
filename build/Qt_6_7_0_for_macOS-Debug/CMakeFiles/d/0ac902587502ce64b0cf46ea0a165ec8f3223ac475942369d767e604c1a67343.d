@@ -90,6 +90,7 @@ ZorkProject_autogen/timestamp: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/wait.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/CMakeLists.txt \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/abstractitem.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
@@ -101,10 +102,13 @@ ZorkProject_autogen/timestamp: \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.cpp \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.ui \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/mapgenerator.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/player.cpp \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/player.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/room.cpp \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/standardmapgenerator.cpp \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/standardmapgenerator.h \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QList \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QMap \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \

@@ -11,4 +11,6 @@ void item::setWeight(int inWeightGrams)
 
         weightGrams = inWeightGrams;
 }
-
+void item::use() const{
+    std::cout<< "Using item: " << description << std::endl;
+}

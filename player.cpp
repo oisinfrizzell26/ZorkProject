@@ -80,3 +80,14 @@ bool Player::hasItem(const std::string &itemName) const {
 bool Player::hasDoorkey() const{
     return hasItem("doorKey");
 }
+
+
+void Player::useItem(const std::string &itemName) const {
+    for (const item &it : inventory) {
+        if (it.getDescription() == itemName) {
+            it.use(); // Call the virtual function
+            return;
+        }
+    }
+    std::cout << "Item not found in inventory" << std::endl;
+}

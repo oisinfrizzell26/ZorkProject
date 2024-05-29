@@ -97,6 +97,14 @@ build CMakeFiles/ZorkProject.dir/item.cpp.o: CXX_COMPILER__ZorkProject_unscanned
   OBJECT_DIR = CMakeFiles/ZorkProject.dir
   OBJECT_FILE_DIR = CMakeFiles/ZorkProject.dir
 
+build CMakeFiles/ZorkProject.dir/standardmapgenerator.cpp.o: CXX_COMPILER__ZorkProject_unscanned_Debug /Users/oisinfrizzell/Desktop/C++/ZorkProject/standardmapgenerator.cpp || cmake_object_order_depends_target_ZorkProject
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/ZorkProject.dir/standardmapgenerator.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/oisinfrizzell/Desktop/C++/ZorkProject/build/Qt_6_7_0_for_macOS-Debug/ZorkProject_autogen/include -isystem /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Headers -iframework /Users/oisinfrizzell/Qt/6.7.0/macos/lib -isystem /Users/oisinfrizzell/Qt/6.7.0/macos/mkspecs/macx-clang -isystem /Users/oisinfrizzell/Qt/6.7.0/macos/include -isystem /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/ZorkProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/ZorkProject.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ZorkProject
@@ -105,7 +113,7 @@ build CMakeFiles/ZorkProject.dir/item.cpp.o: CXX_COMPILER__ZorkProject_unscanned
 #############################################
 # Link the executable ZorkProject.app/Contents/MacOS/ZorkProject
 
-build ZorkProject.app/Contents/MacOS/ZorkProject: CXX_EXECUTABLE_LINKER__ZorkProject_Debug CMakeFiles/ZorkProject.dir/ZorkProject_autogen/mocs_compilation.cpp.o CMakeFiles/ZorkProject.dir/main.cpp.o CMakeFiles/ZorkProject.dir/mainwindow.cpp.o CMakeFiles/ZorkProject.dir/player.cpp.o CMakeFiles/ZorkProject.dir/room.cpp.o CMakeFiles/ZorkProject.dir/item.cpp.o | /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore || ZorkProject_autogen ZorkProject_autogen_timestamp_deps
+build ZorkProject.app/Contents/MacOS/ZorkProject: CXX_EXECUTABLE_LINKER__ZorkProject_Debug CMakeFiles/ZorkProject.dir/ZorkProject_autogen/mocs_compilation.cpp.o CMakeFiles/ZorkProject.dir/main.cpp.o CMakeFiles/ZorkProject.dir/mainwindow.cpp.o CMakeFiles/ZorkProject.dir/player.cpp.o CMakeFiles/ZorkProject.dir/room.cpp.o CMakeFiles/ZorkProject.dir/item.cpp.o CMakeFiles/ZorkProject.dir/standardmapgenerator.cpp.o | /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore || ZorkProject_autogen ZorkProject_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/oisinfrizzell/Qt/6.7.0/macos/lib  /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtGui.framework/Versions/A/QtGui  /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal
   LINK_PATH = -iframework /Users/oisinfrizzell/Qt/6.7.0/macos/lib
@@ -207,7 +215,7 @@ build ZorkProject_autogen/timestamp ZorkProject_autogen/mocs_compilation.cpp | $
 #############################################
 # Phony custom command for CMakeFiles/ZorkProject_autogen_timestamp_deps
 
-build CMakeFiles/ZorkProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/ZorkProject_autogen_timestamp_deps: phony /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/uic /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/moc
+build CMakeFiles/ZorkProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/ZorkProject_autogen_timestamp_deps: phony /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/uic /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/moc /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 
 
 #############################################

@@ -3,14 +3,15 @@
 
 #include <string>
 #include <iostream>
-
-class item
+#include "abstractitem.h"
+class item : public AbstractItem
 {
 public:
     item(std::string inDescription, int inWeightGrams);
     void setWeight(int inWeightGrams);
     std::string getDescription() const { return description; }
     int getWeight() const { return weightGrams; }
+    void use() const override; // this overrides the pure virtual function
 
 
 

@@ -90,9 +90,12 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/wait.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/abstractitem.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/mapgenerator.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/player.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/standardmapgenerator.h \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QList \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QMap \
   /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
