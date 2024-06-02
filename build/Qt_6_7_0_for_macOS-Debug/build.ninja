@@ -215,7 +215,7 @@ build ZorkProject_autogen/timestamp ZorkProject_autogen/mocs_compilation.cpp | $
 #############################################
 # Phony custom command for CMakeFiles/ZorkProject_autogen_timestamp_deps
 
-build CMakeFiles/ZorkProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/ZorkProject_autogen_timestamp_deps: phony /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/uic /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/moc /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+build CMakeFiles/ZorkProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/ZorkProject_autogen_timestamp_deps: phony /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/uic /Users/oisinfrizzell/Qt/6.7.0/macos/./libexec/moc /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/oisinfrizzell/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 
 
 #############################################
