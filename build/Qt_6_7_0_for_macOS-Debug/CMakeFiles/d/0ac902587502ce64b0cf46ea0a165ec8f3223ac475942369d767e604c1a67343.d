@@ -95,7 +95,11 @@ ZorkProject_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   ZorkProject_autogen/moc_predefs.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/entity.cpp \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/entity.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/global.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/guide.cpp \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/guide.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.cpp \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/main.cpp \
@@ -104,6 +108,8 @@ ZorkProject_autogen/timestamp: \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/mainwindow.ui \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/mapgenerator.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/npc.cpp \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/npc.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/player.cpp \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/player.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/room.cpp \

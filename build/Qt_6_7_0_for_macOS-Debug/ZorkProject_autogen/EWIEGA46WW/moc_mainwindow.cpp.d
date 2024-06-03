@@ -91,9 +91,12 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/wait.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/abstractitem.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/entity.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/global.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/guide.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/mapgenerator.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/npc.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/player.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/room.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/standardmapgenerator.h \

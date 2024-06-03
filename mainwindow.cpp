@@ -12,15 +12,32 @@ int totalMoves = 0;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , guide("Guide")
+    , player("Player")  // Initialize Player with a name
+        // Initialize Guide with a name
     , startingRoom(nullptr)
     , a(nullptr)
+    , b(nullptr)
+    , c(nullptr)
+    , d(nullptr)
+    , e(nullptr)
+    , f(nullptr)
+    , g(nullptr)
+    , h(nullptr)
+    , i(nullptr)
+    , j(nullptr)
+
 {
     ui->setupUi(this);  // Setup UI components
+    QString welcomeMessage = guide.interact();  // Get welcome message
+    appendOutput(welcomeMessage);
 
     createRooms();  // Call the function to create and link rooms
 
     player.moveTo(startingRoom);  // Start the player in the starting room
     appendOutput(player.lookAround());  // Display the initial room description
+
+
 }
 
 // Destructor
@@ -29,6 +46,15 @@ MainWindow::~MainWindow()
     delete ui;  // Clean up UI
     delete startingRoom;  // Clean up starting room
     delete a;  // Clean up northern room
+    delete b;
+    delete c;
+    delete d;
+    delete e;
+    delete f;
+    delete g;
+    delete h;
+    delete i;
+    delete j;
 }
 
 // Method to append text to the QPlainTextEdit

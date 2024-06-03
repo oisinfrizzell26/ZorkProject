@@ -5,14 +5,15 @@
 #include "room.h"
 
 #include "global.h"
+#include "entity.h"
 
 
 
-class Player
+class Player : public Entity
 {
 public:
 
-    Player();
+     Player(const QString& name);
     // Constructor: Initializes the player with no current room
 
     void moveTo(room *newRoom);

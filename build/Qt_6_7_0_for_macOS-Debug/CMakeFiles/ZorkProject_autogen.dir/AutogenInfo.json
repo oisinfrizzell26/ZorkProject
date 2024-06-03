@@ -291,9 +291,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/entity.h",
+			"MU",
+			"EWIEGA46WW/moc_entity.cpp",
+			null
+		],
+		[
 			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/global.h",
 			"MU",
 			"EWIEGA46WW/moc_global.cpp",
+			null
+		],
+		[
+			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/guide.h",
+			"MU",
+			"EWIEGA46WW/moc_guide.cpp",
 			null
 		],
 		[
@@ -318,6 +330,12 @@
 			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/mapgenerator.h",
 			"MU",
 			"EWIEGA46WW/moc_mapgenerator.cpp",
+			null
+		],
+		[
+			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/npc.h",
+			"MU",
+			"EWIEGA46WW/moc_npc.cpp",
 			null
 		],
 		[
@@ -396,6 +414,8 @@
 	"SETTINGS_FILE" : "/Users/oisinfrizzell/Desktop/C++/ZorkProject/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/ZorkProject_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/entity.cpp", "MU", null ],
+		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/guide.cpp", "MU", null ],
 		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/item.cpp", "MU", null ],
 		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/main.cpp", "MU", null ],
 		[
@@ -403,6 +423,7 @@
 			"MU",
 			null
 		],
+		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/npc.cpp", "MU", null ],
 		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/player.cpp", "MU", null ],
 		[ "/Users/oisinfrizzell/Desktop/C++/ZorkProject/room.cpp", "MU", null ],
 		[

@@ -8,6 +8,7 @@
 #include "Room.h"
 #include "StandardMapGenerator.h"
 #include "global.h"
+#include "guide.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -46,6 +47,7 @@ private:
     room *startingRoom;  // Pointer to the starting room
     room *a,*b,*c,*d,*e,*f,*g,*h,*i,*j;  // Pointer to the northern room
     StandardMapGenerator mapGenerator;
+    Guide guide;
     // Function to create and link rooms
     void createRooms();
 };

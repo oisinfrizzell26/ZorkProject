@@ -8,7 +8,7 @@ void incrementMoves(){
 
 
 // Constructor: Initializes the player with no current room
-Player::Player() : currentRoom(nullptr) {}
+Player::Player(const QString& name) : Entity(name), currentRoom(nullptr) {}
 
 
 
