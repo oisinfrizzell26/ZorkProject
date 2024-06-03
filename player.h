@@ -6,6 +6,7 @@
 
 #include "global.h"
 #include "entity.h"
+#include "customexception.h"
 
 
 

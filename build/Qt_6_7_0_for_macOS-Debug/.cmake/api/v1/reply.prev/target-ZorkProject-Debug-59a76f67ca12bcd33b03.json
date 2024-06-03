@@ -69,13 +69,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 73,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 56,
+				"line" : 57,
 				"parent" : 0
 			},
 			{
@@ -297,18 +297,19 @@
 				14,
 				17,
 				19,
-				21
+				21,
+				23
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "ZorkProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "ZorkProject_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ZorkProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "ZorkProject::@6890427a1f51a3e7e1df",
@@ -419,7 +420,8 @@
 				14,
 				17,
 				19,
-				21
+				21,
+				23
 			]
 		},
 		{
@@ -437,7 +439,8 @@
 				16,
 				18,
 				20,
-				22
+				22,
+				24
 			]
 		},
 		{
@@ -445,14 +448,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				23
+				25
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				24
+				26
 			]
 		}
 	],
@@ -577,6 +580,17 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "guide.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "customexception.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "customexception.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

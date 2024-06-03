@@ -68,6 +68,8 @@ QString Player::pickUpItem() {
     }
     return "No items to pick up";
 }
+
+
 QString Player::listInventory() const {
     QString inventoryList;
     if(inventory.empty()){

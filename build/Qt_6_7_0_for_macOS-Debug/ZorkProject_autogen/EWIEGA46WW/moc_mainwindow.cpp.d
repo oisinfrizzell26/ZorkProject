@@ -91,6 +91,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/wait.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/abstractitem.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/customexception.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/entity.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/global.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/guide.h \

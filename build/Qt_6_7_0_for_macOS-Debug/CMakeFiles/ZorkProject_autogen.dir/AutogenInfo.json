@@ -291,6 +291,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/customexception.h",
+			"MU",
+			"EWIEGA46WW/moc_customexception.cpp",
+			null
+		],
+		[
 			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/entity.h",
 			"MU",
 			"EWIEGA46WW/moc_entity.cpp",

@@ -34,6 +34,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         entity.h entity.cpp
         npc.h npc.cpp
         guide.h guide.cpp
+        customexception.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ZorkProject APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
