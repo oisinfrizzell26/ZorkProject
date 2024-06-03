@@ -7,7 +7,7 @@
 #include "global.h"
 #include "entity.h"
 #include "customexception.h"
-
+#include "abstractitem.h"
 
 
 class Player : public Entity
@@ -32,6 +32,9 @@ public:
     bool hasItem(const std::string &itemName) const; // checks if you have item for picking up item
     bool hasDoorkey() const;
     void useItem(const std::string &itemName) const;
+
+    void compareTreasureChestWithKey() const;
+
 
 
 private:

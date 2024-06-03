@@ -14,3 +14,7 @@ void item::setWeight(int inWeightGrams)
 void item::use() const{
     std::cout<< "Using item: " << description << std::endl;
 }
+
+bool item::operator<(const item& other) const {
+    return this->weightGrams < other.weightGrams;
+}

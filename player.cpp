@@ -50,23 +50,32 @@ room* Player::getCurrentRoom() const {
     return currentRoom;
 }
 
-QString Player::pickUpItem() {
-    if (currentRoom && !currentRoom->items.empty()) {
-        item currentItem = currentRoom->items.back();
-        if (currentItem.getDescription() == "Treasure Chest" && !hasItem("Key")) {
-            return "You need a key to open the chest";
-        }
-        inventory.push_back(currentItem);
-        currentRoom->items.pop_back();
-
-        // Check if the item is "Treasure Chest" and return "Game Over"
-        if (currentItem.getDescription() == "Treasure Chest") {
-            return "Game Over. Total Moves: "+ QString::number(totalMoves);
-        }
-
-        return "Item picked up successfully";
+QString Player::pickUpItem()
+{
+    if (!currentRoom) {
+        throw CustomException("Player is not in any room");
     }
-    return "No items to pick up";
+
+    if (currentRoom->items.empty())
+    {
+        throw CustomException("No items to pick up");
+    }
+
+    item currentItem = currentRoom->items.back();
+    if (currentItem.getDescription() == "Treasure Chest" && !hasItem("Key"))
+    {
+        return "You need a key to open the chest";
+    }
+    inventory.push_back(currentItem);
+    currentRoom->items.pop_back();
+
+    // Check if the item is "Treasure Chest" and return "Game Over" with total moves
+    if (currentItem.getDescription() == "Treasure Chest")
+    {
+        return "Game Over. Total Moves: " + QString::number(totalMoves);
+    }
+
+    return "Item picked up successfully";
 }
 
 
@@ -106,3 +115,23 @@ void Player::useItem(const std::string &itemName) const {
     }
     std::cout << "Item not found in inventory" << std::endl;
 }
+
+
+void Player::compareTreasureChestWithKey() const {
+    item treasureChest("Treasure Chest", 4000); // Assume weight is 5000 grams
+    item key("Key", 2000); // Assume weight is 100 grams
+
+    if (key < treasureChest) {
+        std::cout << key.getDescription() << " is lighter than " << treasureChest.getDescription() << std::endl;
+    } else {
+        std::cout << treasureChest.getDescription() << " is lighter than " << key.getDescription() << std::endl;
+    }
+}
+
+
+
+
+
+
+
+

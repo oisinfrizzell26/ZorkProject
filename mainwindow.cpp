@@ -4,6 +4,7 @@
 #include <QTimer>
 #include <iostream>
 #include "global.h"
+#include "customexception.h"
 
 int totalMoves = 0;
 
@@ -133,17 +134,20 @@ void MainWindow::on_northButton_clicked()
 void MainWindow::on_pickButton_clicked()
 {
     if (player.getCurrentRoom()) {
-        QString result = player.pickUpItem();
-        appendOutput(result + "\n");
-        appendOutput(player.lookAround());
+        try {
+            QString result = player.pickUpItem();
+            appendOutput(result + "\n");
+            appendOutput(player.lookAround());
 
-        if (result == "Game Over") {
-            // Additional logic for game over scenario, if needed
-            appendOutput("Game Over\n");
+            if (result == "Game Over") {
+                // Additional logic for game over scenario, if needed
+                appendOutput("Game Over\n");
+            }
+        } catch (const CustomException& e) {
+            appendOutput(e.what());  // Display the exception message on QPlainTextEdit
         }
     }
 }
-
 
 void MainWindow::on_inventoryButton_clicked()
 {
@@ -204,7 +208,7 @@ void MainWindow::createRooms()
 
 
     b->addItem(item("Key", 2000));
-    j ->addItem(item("Treasure Chest", 2000));
+    j ->addItem(item("Treasure Chest", 4000));
 
     i->addItem(item("doorKey",1000));
 }

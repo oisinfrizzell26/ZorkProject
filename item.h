@@ -13,7 +13,7 @@ public:
     int getWeight() const { return weightGrams; }
     void use() const override; // this overrides the pure virtual function
 
-
+    bool operator<(const item& other) const; //operator overloading
 
 
 private:
