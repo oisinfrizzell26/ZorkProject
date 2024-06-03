@@ -95,6 +95,7 @@ ZorkProject_autogen/timestamp: \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeSystem.cmake \
   ZorkProject_autogen/moc_predefs.h \
+  /Users/oisinfrizzell/Desktop/C++/ZorkProject/global.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.cpp \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/item.h \
   /Users/oisinfrizzell/Desktop/C++/ZorkProject/main.cpp \

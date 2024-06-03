@@ -1,13 +1,26 @@
 #include "player.h"
+#include "global.h"
+
+
+void incrementMoves(){
+    totalMoves++;
+}
 
 
 // Constructor: Initializes the player with no current room
 Player::Player() : currentRoom(nullptr) {}
 
-// Moves the player to a new room
-void Player::moveTo(room *newRoom) {
-    currentRoom = newRoom;
 
+
+
+// Moves the player to a new room
+void Player::moveTo(room* newRoom)
+{
+    if (newRoom != nullptr)
+    {
+        currentRoom = newRoom;
+        incrementMoves();  // Increment the move count each time the player moves
+    }
 }
 
 // Returns the description of the current room, or a default message if the player is not in a room
@@ -48,7 +61,7 @@ QString Player::pickUpItem() {
 
         // Check if the item is "Treasure Chest" and return "Game Over"
         if (currentItem.getDescription() == "Treasure Chest") {
-            return "Game Over";
+            return "Game Over. Total Moves: "+ QString::number(totalMoves);
         }
 
         return "Item picked up successfully";

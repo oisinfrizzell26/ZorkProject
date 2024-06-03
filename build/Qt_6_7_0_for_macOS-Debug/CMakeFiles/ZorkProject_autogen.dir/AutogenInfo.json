@@ -291,6 +291,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/global.h",
+			"MU",
+			"EWIEGA46WW/moc_global.cpp",
+			null
+		],
+		[
 			"/Users/oisinfrizzell/Desktop/C++/ZorkProject/item.h",
 			"MU",
 			"EWIEGA46WW/moc_item.cpp",

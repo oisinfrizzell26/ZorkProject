@@ -1,5 +1,12 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include <QApplication>
+#include <QTimer>
+#include <iostream>
+#include "global.h"
+
+int totalMoves = 0;
+
 
 // Constructor
 MainWindow::MainWindow(QWidget *parent)

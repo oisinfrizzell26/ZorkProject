@@ -7,6 +7,7 @@
 #include "player.h"
 #include "Room.h"
 #include "StandardMapGenerator.h"
+#include "global.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

@@ -1,8 +1,11 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include"abstractitem.h"
+#include "abstractitem.h"
 #include "room.h"
+
+#include "global.h"
+
 
 
 class Player
