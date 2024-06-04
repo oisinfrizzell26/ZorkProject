@@ -1,9 +1,12 @@
 #ifndef ITEM_H
-#define ITEM_H
+#define ITEM_H //item is a bit structure that contains one or more bit feilds
 
 #include <string>
 #include <iostream>
 #include "abstractitem.h"
+
+
+
 class item : public AbstractItem
 {
 public:
@@ -18,7 +21,7 @@ public:
 
 private:
     std::string description;
-    int weightGrams;
+    unsigned int weightGrams : 12;// bit structures. unsigned means can only be positive
 };
 
 #endif // ITEM_H
