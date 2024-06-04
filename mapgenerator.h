@@ -1,6 +1,8 @@
 #ifndef MAPGENERATOR_H
 #define MAPGENERATOR_H
 
+#pragma once
+
 #include <QString>
 
 class MapGenerator {
