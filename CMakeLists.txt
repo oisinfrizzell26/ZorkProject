@@ -23,6 +23,18 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(ZorkProject
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+
+        player.h player.cpp
+        main.h main.cpp
+        room.h room.cpp
+        item.h item.cpp
+        mapgenerator.h
+        standardmapgenerator.h standardmapgenerator.cpp
+        global.h
+        entity.h entity.cpp
+        npc.h npc.cpp
+        guide.h guide.cpp
+        customexception.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET ZorkProject APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
