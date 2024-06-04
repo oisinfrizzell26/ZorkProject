@@ -1,7 +1,7 @@
 #ifndef MAPGENERATOR_H
 #define MAPGENERATOR_H
 
-#pragma once
+#pragma once // advanced preproccesor ensure the file is included only once
 
 #include <QString>
 

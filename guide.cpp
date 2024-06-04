@@ -3,5 +3,7 @@
 Guide::Guide(const QString& name) : NPC(name) {}
 
 QString Guide::interact() const {
-    return "Guide: Welcome to the game! Your goal is to unlock the treasure chest.";
+    QString map = generateMap();
+
+    return "Guide: Welcome to the game!\n" + map + "\nYou are currently in spawn.";
 }
