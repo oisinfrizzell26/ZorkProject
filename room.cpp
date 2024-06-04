@@ -54,3 +54,4 @@ QString room::listItems()const{
     }//&it refers to each it in items class one by one
     return itemList;
 }
+

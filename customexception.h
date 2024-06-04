@@ -3,18 +3,23 @@
 
 #include <exception>
 #include <iostream>
+#include <string>
 
-class CustomException : public std::exception {
+using std::exception;
+using std::cerr;
+using std::string;
+
+class CustomException : public exception {
 public:
-    CustomException(const std::string& message) : message(message) {}//takes a string as an arh=gument to initalize the error messahe
+    CustomException(const string& message) : message(message) {} // Takes a string as an argument to initialize the error message
 
     virtual const char* what() const noexcept override {
-        std::cerr << "Exception: " << message << std::endl;  // Print the message to the terminal
+        cerr << "Exception: " << message << std::endl;  // Print the message to the terminal
         return message.c_str();
     }
 
 private:
-    std::string message;
+    string message;
 };
 
-#endif
+#endif // CUSTOMEXCEPTION_H
