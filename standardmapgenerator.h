@@ -10,4 +10,4 @@ public:
     QString generateMap() const override; // Override the pure virtual function
 };
 
-#endif // STANDARD_MAP_GENERATOR_H
+#endif

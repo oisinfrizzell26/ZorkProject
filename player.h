@@ -44,4 +44,4 @@ private:
 
 };
 
-#endif // PLAYER_H
+#endif

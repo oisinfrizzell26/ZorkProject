@@ -6,8 +6,17 @@
 #include <vector>
 #include "item.h"
 
+class MapGenerator;
+
 class room
 {
+
+private:
+    QString description;  // Description of the room
+
+    QMap<QString, room*> exits;  // Maps directions to neighboring rooms
+
+
 public:
     // Constructor: Initializes the room with a description
     room(const QString &description);
@@ -27,10 +36,10 @@ public:
     QString listItems() const;
     std::vector<item> items;
 
-private:
-    QString description;  // Description of the room
-    QMap<QString, room*> exits;  // Maps directions to neighboring rooms
+    friend class MapGenerator;
+
+
 
 };
 
-#endif // ROOM_H
+#endif

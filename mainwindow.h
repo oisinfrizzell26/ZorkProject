@@ -21,6 +21,7 @@ class MainWindow : public QMainWindow
 public:
     // Constructor: Initializes the main window
     MainWindow(QWidget *parent = nullptr);
+
     // Destructor: Cleans up resources used by the main window
     ~MainWindow();
 
@@ -45,12 +46,11 @@ private:
     Ui::MainWindow *ui;  // Pointer to the UI elements defined in the .ui file
     Player player;  // The player object
     room *startingRoom;  // Pointer to the starting room
-    room *a,*b,*c,*d,*e,*f,*g,*h,*i,*j;  // Pointer to the northern room
+    room *a,*b,*c,*d,*e,*f,*g,*h,*i,*j;  // Pointer to rooms
     StandardMapGenerator mapGenerator;
     Guide guide;
-    // Function to create and link rooms
-    void createRooms();
+
+    void createRooms();  // Function to create and link rooms
 };
 
-#endif // MAINWINDOW_H
-
+#endif

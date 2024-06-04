@@ -5,6 +5,10 @@
 #include <iostream>
 #include "abstractitem.h"
 
+union ValueUnion { //union for future development
+    int intValue;
+    char charValue;
+};
 
 
 class item : public AbstractItem
@@ -19,9 +23,18 @@ public:
     bool operator<(const item& other) const; //operator overloading
 
 
+    // Accessor methods for the union
+    int getIntValue() const { return valueUnion.intValue; }
+    char getCharValue() const { return valueUnion.charValue; }
+
 private:
     std::string description;
-    unsigned int weightGrams : 12;// bit structures. unsigned means can only be positive
+    unsigned int weightGrams : 12;// bit field
+    ValueUnion valueUnion; // Adding the union to the item class
 };
 
-#endif // ITEM_H
+
+
+
+
+#endif

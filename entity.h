@@ -5,11 +5,11 @@
 
 class Entity {
 public:
-    Entity(const QString& name);
+    Entity(const QString& name); //constructor that initalizes enitys name
     QString getName() const;
 
 protected:
     QString name;
 };
 
-#endif // ENTITY_H
+#endif

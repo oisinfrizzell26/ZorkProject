@@ -19,19 +19,19 @@ void room::setExit(const QString &direction, room *neighbor) {
 void room::setExits(room *north, room *east, room *south, room *west) {
     if (north != nullptr) {
         setExit("north", north);
-        north->setExit("south", this); // Automatically set reciprocal exit
+        north->setExit("south", this);
     }
     if (east != nullptr) {
         setExit("east", east);
-        east->setExit("west", this); // Automatically set reciprocal exit
+        east->setExit("west", this);
     }
     if (south != nullptr) {
         setExit("south", south);
-        south->setExit("north", this); // Automatically set reciprocal exit
+        south->setExit("north", this);
     }
     if (west != nullptr) {
         setExit("west", west);
-        west->setExit("east", this); // Automatically set reciprocal exit
+        west->setExit("east", this);
     }
 
 
@@ -41,9 +41,11 @@ room* room::getExit(const QString &direction) const {
     return exits.value(direction, nullptr);
 }
 
+
 void room::addItem(const item &item){
     items.push_back(item);
 }
+
 
 QString room::listItems()const{
     QString itemList;

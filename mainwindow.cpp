@@ -46,7 +46,7 @@ MainWindow::~MainWindow()
 {
     delete ui;  // Clean up UI
     delete startingRoom;  // Clean up starting room
-    delete a;  // Clean up northern room
+    delete a;  // Clean up room a etc
     delete b;
     delete c;
     delete d;
@@ -58,11 +58,15 @@ MainWindow::~MainWindow()
     delete j;
 }
 
-// Method to append text to the QPlainTextEdit
+
+
+// Method to display output on QPlainTextEdit
 void MainWindow::appendOutput(const QString &message)
 {
     ui->plainTextEdit->appendPlainText(message);  // Append the provided message to the plainTextEdit widget
 }
+
+
 
 // Slot for south button click
 void MainWindow::on_southButton_clicked()
@@ -81,6 +85,8 @@ void MainWindow::on_southButton_clicked()
     }
 }
 
+
+
 // Slot for east button click
 void MainWindow::on_eastButton_clicked()
 {
@@ -97,6 +103,10 @@ void MainWindow::on_eastButton_clicked()
         appendOutput("You can't go east from here.\n\n");
     }
 }
+
+
+
+
 // Slot for west button click
 void MainWindow::on_westButton_clicked()
 {
@@ -113,6 +123,9 @@ void MainWindow::on_westButton_clicked()
         appendOutput("You can't go west from here.\n\n");
     }
 }
+
+
+
 // Slot for north button click
 void MainWindow::on_northButton_clicked()
 {
@@ -131,6 +144,7 @@ void MainWindow::on_northButton_clicked()
 }
 
 
+//slot for pickup button clicked
 void MainWindow::on_pickButton_clicked()
 {
     if (player.getCurrentRoom()) {
@@ -148,6 +162,8 @@ void MainWindow::on_pickButton_clicked()
         }
     }
 }
+
+
 
 void MainWindow::on_inventoryButton_clicked()
 {
@@ -171,11 +187,11 @@ void MainWindow::on_mapButton_clicked()
 
 
 
-// Function to create and link rooms
+// method to create and link rooms
 void MainWindow::createRooms()
 {
-    startingRoom = new room("Spawn \nYou are in a small dark room. There is barely any light and the room appears to be empty\n");  // Initialize the starting room
-
+    //creating rooms
+    startingRoom = new room("Spawn \nYou are in a small dark room. There is barely any light and the room appears to be empty\n");
     a = new room("Great hall\nYou walk through the door and are amazed by what you see. It is a Great Hall you can't believe your eyes. You look around there is long rows of tables all leading to a Throne. You think to yourself... This must be where the king sat....\n");
     b = new room("Balcony\nYou enter a balcony. The view is great from here\n");
     c = new room("Bedroom\n You enter what appears to be the kings bedroom you see a shiny sword in the corner\n");
@@ -202,14 +218,9 @@ void MainWindow::createRooms()
     j->setExits(nullptr, nullptr, h, nullptr);
 
 
-
-
-
-
-
+    // creating items
     b->addItem(item("Key", 2000));
     j ->addItem(item("Treasure Chest", 4000));
-
     i->addItem(item("doorKey",1000));
 }
 

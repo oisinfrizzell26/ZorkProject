@@ -9,4 +9,4 @@ public:
     virtual QString interact() const;
 };
 
-#endif // NPC_H
+#endif

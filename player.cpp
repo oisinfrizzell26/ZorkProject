@@ -1,7 +1,7 @@
 #include "player.h"
 #include "global.h"
 
-
+//counts total moves to finish game
 void incrementMoves(){
     totalMoves++;
 }
@@ -46,9 +46,11 @@ QString Player::lookAround() const {
 
 }
 
-room* Player::getCurrentRoom() const {
+room* Player::getCurrentRoom() const { //getter
     return currentRoom;
 }
+
+
 
 QString Player::pickUpItem()
 {
@@ -92,6 +94,9 @@ QString Player::listInventory() const {
 
 }
 
+
+
+
 bool Player::hasItem(const std::string &itemName) const {
     for (const item &it : inventory) {
         if (it.getDescription() == itemName) {
@@ -101,9 +106,15 @@ bool Player::hasItem(const std::string &itemName) const {
     return false;
 }
 
+
+
+
 bool Player::hasDoorkey() const{
     return hasItem("doorKey");
 }
+
+
+
 
 
 void Player::useItem(const std::string &itemName) const {
@@ -115,6 +126,8 @@ void Player::useItem(const std::string &itemName) const {
     }
     std::cout << "Item not found in inventory" << std::endl;
 }
+
+
 
 
 void Player::compareTreasureChestWithKey() const {

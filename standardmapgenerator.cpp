@@ -16,4 +16,4 @@ QString StandardMapGenerator::generateMap() const {
            "                                     |         \n"
            "                              [Spawn]        \n";
 }
-//This was only used to
+

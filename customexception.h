@@ -6,7 +6,7 @@
 
 class CustomException : public std::exception {
 public:
-    CustomException(const std::string& message) : message(message) {}
+    CustomException(const std::string& message) : message(message) {}//takes a string as an arh=gument to initalize the error messahe
 
     virtual const char* what() const noexcept override {
         std::cerr << "Exception: " << message << std::endl;  // Print the message to the terminal
@@ -17,4 +17,4 @@ private:
     std::string message;
 };
 
-#endif // CUSTOMEXCEPTION_H
+#endif
